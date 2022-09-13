@@ -1,0 +1,49 @@
+.ebook {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+    margin-bottom: 5rem;
+
+    @media (max-width:767px) {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+    }
+
+    &__apr {
+        display: flex;
+        flex-flow: column;
+        min-height: 20rem;
+        padding: 1rem;
+        position: relative;
+        width: 100%;
+        background-color: rgba($color: #656565, $alpha: .5) ;
+        border-radius: 10px;
+        justify-content: flex-start;
+    }
+
+    &__title {
+        font-size: 2rem;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 10px;
+        border-bottom: 1px solid black;
+
+
+    }
+
+    &__desc {
+        font-size: 1.5rem;
+        text-align:justify;
+        padding-top: 10px;
+     
+   
+    }
+
+}
+
+.maintitle {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 2rem;
+    margin-top: 2rem;
+}

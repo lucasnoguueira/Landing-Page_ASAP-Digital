@@ -1,0 +1,44 @@
+$font-default: Arial, Helvetica, sans-serif;
+$font-size-default: 1.6rem;
+$font-size-nav: 1.8rem;
+$color-primary: #ffffff; ;
+$color-secondary: #f58220;
+$font-color-primary: #000000;
+$font-color-secondary: #f58220;
+
+
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: $color-primary;
+    font-family: $font-default;
+}
+
+#root,
+header,
+section,
+footer {
+    display: block;
+    float: left;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-flow: column;
+    margin: 0 auto;
+    max-width: 90vw;
+
+}
+
+
+@import 'header';
+@import 'introducao';
+@import 'explain';
+@import 'why';
+@import 'ebook';
+@import 'conv';
